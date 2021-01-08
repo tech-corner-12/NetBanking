@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function validateForm() {
+  var x = document.forms["foru"]["name"].value;
+var y = document.forms["foru"]["password"].value;
+var z = document.forms["foru"]["accountno"].value;
+  if (x == "" || y =="" || z =="") {
+    alert("All fields must be filled out");
+    return false;
+  }
+}
+</script>
+<style>
+.form{
+width:300px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:black;
+padding:20px 20px;
+background-color:white;
+}
+.textbox
+{
+width: 100%;
+overflow: hidden;
+font-size:20px;
+padding:5px 0;
+}
+</style>
+</head>
+<body>
+<marquee bgcolor="lightblue" height="40px">Please ensure your Account number</marquee>
+<h1><strong>Check Your previous payments</strong></h1>
+<div class="form">
+<form name="foru" action="checkpay" method="post" onsubmit="return validateForm()">
+<div class="textbox">
+Enter username:<input type="text" name="name" placeholder="name"></div><br>
+<div class="textbox">
+Enter the Password:<input type="password" name="password" placeholder="Password"></div><br>
+<div class="textbox">
+Account no:<input type="text" name="accountno" placeholder="account no."></div><br>
+<input type="submit" value="Proceed">
+</form>
+</div>
+</body>
+</html>

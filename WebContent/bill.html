@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.form{
+width:600px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:indigo;
+padding:20px 20px;
+background-color:white;
+}
+h1{
+color:red;
+
+}
+</style>
+</head>
+<body>
+<div class="form">
+<form action="hello" method="post">
+<h1>Bill Payments</h1><hr>
+<div class="textbox">Card NO.<input type="text" name="cardno" placeholder="Enter your card no."></div><br>
+<div class="textbox">Mobile NO:<input type="text" name="mobileno" placeholder="Enter your Phone no."></div><br>
+<div class="textbox">Email-ID:<input type="text" name="email" placeholder="Enter your email"></div><br>
+<div class="textbox">Amount:<input type="text" name="amounttopay" placeholder="Enter amount to pay" ></div><br>
+<div class="textbox">Date: <input type="text" name="dt" placeholder="dd/mm/yy"><br></div>
+Payment Option:<input type="radio" name="pay"><label>Debit Card</label>
+<input type="radio" name="pay"><label>Internet Banking</label>
+<br><br>
+<input type="submit" value="Proceed">
+</form>
+</div>
+</body>
+</html>

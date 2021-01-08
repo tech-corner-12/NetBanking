@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function validateForm() {
+  var x = document.forms["foru"]["cardno"].value;
+var y = document.forms["foru"]["mobileno"].value;
+var z = document.forms["foru"]["email"].value;
+  if (x == "" || y == "" || z == "") {
+    alert("All fields must be filled out");
+    return false;
+  }
+}
+</script>
+<style>
+.form{
+width:500px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:black;
+padding:20px 20px;
+background-color:white;
+}
+.textbox
+{
+width: 100%;
+overflow: hidden;
+font-size:20px;
+padding:5px 0;
+}
+</style>
+</head>
+<body>
+<marquee bgcolor="yellow">Please ensure your card Number</marquee>
+<h1><strong>Bill Payments</strong></h1>
+<div class="form">
+<form name="foru" action="checkbill" method="post" onsubmit="return validateForm()">
+<div class="textbox">
+Enter Your card no :<input type="text" name="cardno" placeholder="CardNo."></div><br>
+<div class="textbox">
+Enter your mobile NO:<input type="text" name="mobileno" placeholder="MobileNo."></div><br>
+<div class="textbox">
+Enter your email<input type="text" name="email" placeholder="email"></div><br>
+<input type="submit" value="proceed">
+</form>
+</div>
+</body>
+</html>

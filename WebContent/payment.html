@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+color:indigo;
+
+}
+.textbox
+{
+width: 100%;
+overflow: hidden;
+font-size:20px;
+padding:8px 0;
+margin:8px 0;
+color:indigo;
+}
+h1,h2{
+color:red;
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+<form action="pay" method="post">
+<h1><strong>Payments And Transfers</strong></h1><hr>
+<div class="textbox">Account NO. <input type="text" name="accountno" placeholder="Enter your account no."><br></div>
+<div class="textbox">Beneficiary Name:<input type="text" name="bname" placeholder="Enter Beneficiary name"><br></div>
+<div class="textbox">Beneficiary Account NO. <input type="text" name="bno1" placeholder="Enter Beneficiary account no."><br></div>
+<div class="textbox">Re-enter Beneficiary Account No.<input type="text" name="bno2" placeholder="re-enter to check accountno"><br></div>
+<h2>Select Payment Option</h2><br>
+<div class="textbox">Payment Option: <label>With in Bank</label><input type="radio" name="radio"></div>
+ <label>Other Bank Transfer</label><input type="radio" name="radio"><br>
+<div class="textbox"> Amount:<input type="text" name="amount" placeholder="Enter the amount to transfer"><br></div><br>
+ <label>Purpose:</label><select name="Select-Options">
+ <option value="Donation">Donation</option>
+ <option value="Rent">Rent</option>
+ <option value="Normal-Transfer">Normal-Transfer</option>
+ </select><br><br>
+ <div class="textbox">Date: <input type="text" name="dt" placeholder="dd/mm/yy"><br></div>
+ <input type="checkbox"><label>I Accept all the terms and conditions</label><br><br>
+ <input type="submit" value="Proceed">
+</form>
+</body>
+</html>
